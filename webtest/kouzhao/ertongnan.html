@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>儿童男</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .title{
+            text-align: center;
+            font-size: large;
+        }
+        .line_m{
+		    text-decoration:line-through;
+			float:left;
+			width:50%;
+			height: 30px;
+			font-size:16px;	
+			text-align:center;
+			display:inline-block;
+            vertical-align:middle;
+			
+		}
+		.redfont{
+		    color:white;
+			float:right;
+			width:50%;
+			height: 30px;
+			font-size:16px;
+			text-align:center;
+			
+		}
+		.yellowfont{
+		    color:yellow;
+			width:100%;
+			height: 30px;
+			font-size:18px;
+			text-align:center;
+			
+		}
+		#nav{
+			position:fixed; 
+			bottom:0; 
+			width:100%; 
+			height: 50px; 
+        }
+		
+        .div1{
+            float:left;
+            width: 70%;
+            height: 50px;
+			line-height:50px;
+        }
+		.div2{
+            float:right;
+            width:30%;
+            height: 50px;
+            background-color: #009983;
+			line-height:50px;
+			text-align:center;		
+			filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8;
+        }
+
+		
+    </style>
+</head>
+<body>
+    <script language="javascript">
+    function changeColor(){
+        var color="yellow|white";
+        color=color.split("|");
+        document.getElementById("changeclour").style.color=color[parseInt(Math.random() * color.length)];
+    }
+    setInterval("changeColor()",200);
+    </script>
+
+
+
+	<div id="nav">
+	 
+	 <div class ="div1"><span class="line_m">    </span><span class="redfont">     </span></div>   
+	 <div class ="div2"><span id = "changeclour" class="yellowfont" onclick=javascript:window.location.href='https://enjoy.abchina.com/jf-web/epayItem?code=JF-EPAY2020042985927'>立即抢购</span></div> 
+	 
+	</div>
+	
+	<!-- <a href="https://enjoy.abchina.com/jf-web/epayItem?code=JF-EPAY2020031872837" id="nav" ><img src="fudong.jpg"></a> -->
+    <!-- <div class="title">标题一</div> -->
+    <img src="ertongnan_2.jpg">
+    <!-- https://www.abchina.com/web2native|channel=goto_webview*callurl=https://enjoy.abchina.com/jf-web/epayItem?code=JF-EPAY2018051032492 -->
+
+
+</body>
+</html>
